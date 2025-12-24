@@ -1,0 +1,26 @@
+<html>
+    <body>
+            <h4>Working</h4>
+            <input id="file" type="file" />
+            <button id="submit">submit</button>
+    </body>
+    <script>
+        console.log("working")
+        const fileInput = document.getElementById("file")
+        const submitButton = document.getElementById("submit")
+
+        submitButton.addEventListner("click", () => {
+            console.log("submit button clicked")
+            handleSubmit()
+        })
+
+
+
+        const handleSumbit = async () => {
+            console.log("working")
+            #const response = await fetch("/api/file", { methord:"POST", payload: })
+        }
+
+    </script>
+
+</html>
