@@ -1,24 +1,22 @@
 <html>
     <body>
-            <h4>Working</h4>
+            <h4>Model Compressor</h4>
             <input id="file" type="file" />
-            <button id="submit">submit</button>
+            <button id="submit">Submit</button>
     </body>
     <script>
-        console.log("working")
         const fileInput = document.getElementById("file")
         const submitButton = document.getElementById("submit")
 
-        submitButton.addEventListner("click", () => {
-            console.log("submit button clicked")
+        submitButton.addEventListener("click", () => {
             handleSubmit()
         })
 
 
 
-        const handleSumbit = async () => {
-            console.log("working")
-            #const response = await fetch("/api/file", { methord:"POST", payload: })
+        // handle submit to send api response
+        const handleSubmit = async () => {
+          const response = await fetch("/api/file")
         }
 
     </script>
